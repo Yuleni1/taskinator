@@ -17,12 +17,14 @@
 <header>
     <h1 class="page-title">Taskinator</h1>
     <p>Click the button below to add a new task!</p>
-
+<!--Creating Tasks-->
     <form id="task-form">
+      <!-- Creating task name-->
         <div class="form-group">
             <input type="text" name="task-name" class="text-input" placeholder="Enter Task Name" />
         </div>
 
+      <!--Creating task type -->
           <div class="form-group">
             <select name="task-type" class="select-dropdown">
               <option value="" disabled selected>Pick a task type</option>
@@ -32,19 +34,33 @@
             </select>
           </div>
     
-
+<!-- Button -->
         <div class="form-group">
           <button class="btn" id="save-task" type="submit">Add Task</button>
         </div>
+
     </form>
 </header>
 
-<Main class="page-content">
+<Main class="page-content" id="page-content">
 
+  <!-- Task to do-->
     <section class="task-list-wrapper">
-        <h2 class="list-title">Task to do</h2>
+        <h2 class="list-title">Tasks to do</h2>
         <ul class="task-list" id="tasks-to-do"></ul>
     </section>
+    
+    <!-- Tasks In Progress -->
+        <section class="task-list-wrapper">
+          <h2 class="list-title">Tasks In Progress</h2>
+          <ul class="task-list" id="tasks-in-progress"></ul>
+        </section>
+        
+    <!-- Tasks Completed -->
+        <section class="task-list-wrapper">
+          <h2 class="list-title">Tasks Completed</h2>
+          <ul class="task-list" id="tasks-completed"></ul>
+        </section>
 </Main>
 
 <footer>
